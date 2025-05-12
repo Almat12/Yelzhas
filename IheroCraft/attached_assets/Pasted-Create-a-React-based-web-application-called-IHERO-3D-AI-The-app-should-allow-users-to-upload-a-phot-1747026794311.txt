@@ -1,0 +1,63 @@
+Create a React-based web application called IHERO 3D AI.
+The app should allow users to upload a photo and generate a personalized 3D avatar using a simple, step-by-step process.
+🎨 Visual Design:
+Cosmic-themed UI with a super-cosmic animated background:
+Animated stars, subtle nebula gradients in burgundy and black, and falling stars or particles.
+Youthful, futuristic, clean interface — avoid any clutter or corporate-looking styles.
+All interface text should be in Russian by default, with support for language switching (e.g., Russian, English, Spanish) in the Settings tab.
+🧭 Navigation Bar:
+At the top, include a responsive navigation bar with 3 tabs:
+Главная (Home) – the main photo upload and avatar generation flow
+Настройки (Settings) – includes working Dark Mode toggle and Language Selector
+Помощь (Help) – displays support info, FAQs, all in Russian
+🧩 App Structure and Logic:
+Step 1: Upload Photo
+
+Allow user to upload a photo of their face (JPG, PNG, or GIF, max 10MB)
+Optional prompt field with placeholder:
+"Например, в одежде смокинга, изменить цвет волос..."
+A styled file upload button (e.g., “Выбрать файл” with icon)
+Button: Сгенерировать предпросмотр (Generate Preview)
+Step 2: 2D Avatar Preview
+
+Display a static placeholder 2D image (e.g., via.placeholder.com)
+Two options:
+Confirm result — go to next step
+Edit prompt and re-generate (still static)
+Step 3: 3D Model Preview
+
+Show preview section for a placeholder .OBJ file, downloadable
+Button: Завершить заказ (Finish Order)
+Step 4: Order Form
+
+Collect user name and email
+Button: Отправить заказ (Submit Order)
+Help Page:
+
+Text in Russian:
+"Хотя предварительный просмотр генерируется почти мгновенно, создание окончательного 3D-аватара высокого качества обычно занимает 20–40 минут. Вы получите электронное письмо с готовой моделью, как только она будет готова."
+Support email: support@ihero3d.com
+⚙ Settings Page:
+Working Dark Mode toggle (with state memory if possible)
+Language selector dropdown: русский / English / Español
+All UI and form labels should switch based on selected language
+💡 Technical Notes:
+No external API keys required — use static images and file links as placeholders
+App should be fully client-side only (no backend for now)
+Use React Router or similar for routing between pages
+Use modern responsive layout (mobile-first)
+CSS via TailwindCSS or CSS modules (your choice)
+📁 Suggested Pages and Components:
+/components/Navbar.tsx – Navigation bar
+/pages/Home.tsx – Upload + Prompt + Generate flow
+/pages/Preview.tsx – Show static 2D preview
+/pages/Model.tsx – Show placeholder 3D model
+/pages/Order.tsx – Name + email form
+/pages/Settings.tsx – Theme + language
+/pages/Help.tsx – Support and FAQ
+🪐 Bonus:
+Add a simple starfield background using CSS or canvas. Example ideas:
+CSS animated radial-gradient with blinking stars
+Falling stars (SVG or particles)
+Parallax scroll stars
+This app is called IHERO 3D AI and should feel sleek, creative, futuristic — almost like a hero customization system from a game or movie.
